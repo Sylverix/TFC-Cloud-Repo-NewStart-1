@@ -1,3 +1,13 @@
+terraform {
+  cloud {
+    organization = "MB-Org"
+
+    workspaces {
+      name = "terraform-cloud-remote-operation"
+    }
+  }
+}
+
 data "aws_ami" "latest-linux-ec2" {
   most_recent = true
   owners = ["amazon"]

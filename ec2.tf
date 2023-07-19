@@ -3,7 +3,7 @@ terraform {
     organization = "MB-Org"
 
     workspaces {
-      name = "terraform-cloud-remote-operation"
+      name = "TFC-Cloud-Repo-NewStart-1"
     }
   }
 }

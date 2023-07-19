@@ -1,13 +1,3 @@
-terraform {
-  cloud {
-    organization = "MB-Org"
-
-    workspaces {
-      name = "TFC-Cloud-Repo-NewStart-1"
-    }
-  }
-}
-
 data "aws_ami" "latest-linux-ec2" {
   most_recent = true
   owners = ["amazon"]
